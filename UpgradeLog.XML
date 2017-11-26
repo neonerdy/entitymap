@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EntityMap">
+</Property><Property Name="Solution File" Value="C:\Projects\EntityMap\EntityMap.sln">
+</Property><Property Name="User Options File" Value="C:\Projects\EntityMap\EntityMap.suo">
+</Property><Property Name="Date" Value="Saturday, September 03, 2011">
+</Property><Property Name="Time" Value="19:58 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="EntityMap.sln" Description="File successfully backed up as C:\Projects\EntityMap\Backup\EntityMap.sln">
+</Event><Event ErrorLevel="0" Project="" Source="EntityMap.suo" Description="File successfully backed up as C:\Projects\EntityMap\Backup\EntityMap.suo">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="EntityMap.csproj" Description="Project file successfully backed up as C:\Projects\EntityMap\Backup\EntityMap.csproj">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="ConnectionFactory.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\ConnectionFactory.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="EntityManager.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\EntityManager.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="EntityManagerFactory.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\EntityManagerFactory.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="DataSource.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\DataSource.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="DbCommandWrapper.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\DbCommandWrapper.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="DbHelper.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\DbHelper.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="IEntityManager.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\IEntityManager.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="IDataMapper.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\IDataMapper.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="IRegistry.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\IRegistry.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="PropertyInjector.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\PropertyInjector.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="ServiceLocator.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\ServiceLocator.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="Query.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\Query.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="Transaction.cs" Description="File successfully backed up as C:\Projects\EntityMap\Backup\Transaction.cs">
+</Event><Event ErrorLevel="0" Project="EntityMap" Source="EntityMap.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="EntityMap" Source="EntityMap.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="EntityMap.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="EntityMap.sln" Description="Converted">
+</Event></UpgradeLog>
