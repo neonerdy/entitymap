@@ -1,4 +1,6 @@
-# Entitymap
+# EntityMap
+
+EntityMap is lightweight data acees framework that implement repository pattern, data mapper patern, and fluent interface.
 
 ## How to Use
 
@@ -78,6 +80,26 @@ public class CustomerMapper : IDataMapper<Customer>
 
 ```
 
+Fluent Query
+
+```
+Query q = new Query().From("Customers").Where("CustomerId").Equal("ALFKI");
+Console.WriteLine(q.GetSql());
+
+```
+
+```
+string[] fields = {"CustomerId","CompanyName"};
+object[] values = {"MSFT","Microsoft"};
+
+int result = new Query().Select(fields).From("Customers").Insert(values).ExecuteNonQuery();
+
+string[] fields = {"CompanyName"};
+object[] values = {"Microsoft Corporation"};
+
+int result = new Query().Select(fields).From("Customers").Update(values).Where("CustomerId").Equal("MSFT").ExecuteNonQuery();
+
+```
 
 
 
