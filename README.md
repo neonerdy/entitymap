@@ -7,8 +7,7 @@ Open Connection
 ```
 DataSource dataSource = new DataSource();
 dataSource.Provider = "System.Data.SqlClient";
-dataSource.ConnectionString = "Data Source=XERIS\\SQLEXPRESS;"
- + "Initial Catalog=Northwind;Integrated Security=True";
+dataSource.ConnectionString = "Data Source=XERIS\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True";
 IEntityManager em = EntityManagerFactory.CreateInstance(dataSource);
 
 ```
@@ -19,8 +18,8 @@ ExecuteReader()
 IDataReader rdr=em.ExecuteReader("SELECT * FROM Customers");
 while (rdr.Read())
 {
- Console.WriteLine(rdr["CustomerId"]);
- Console.WriteLine(rdr["CompanyName"]);
+   Console.WriteLine(rdr["CustomerId"]);
+   Console.WriteLine(rdr["CompanyName"]);
 }
 
 ```
@@ -28,8 +27,7 @@ while (rdr.Read())
 ExecuteNonQuery()
 
 ```
-string sql="INSERT INTO Customers (CustomerId,CompanyName) VALUES "
- + "('MSFT','Microsoft')";
+string sql="INSERT INTO Customers (CustomerId,CompanyName) VALUES ('MSFT','Microsoft')";
 em.ExecuteNonQuery(sql);
 
 ```
@@ -48,14 +46,40 @@ ExecuteList()
 
 ```
 string sql="SELECT * FROM Customers ";
-List<Customer> custs = em.ExecuteList< Customer >(sql, new CustomerMapper());
+List<Customer> custs = em.ExecuteList<Customer>(sql, new CustomerMapper());
 foreach (Customer cust in custs)
 {
- Console.WriteLine(cust.CustomerId);
- Console.WriteLine(cust.CompanyName);
+   Console.WriteLine(cust.CustomerId);
+   Console.WriteLine(cust.CompanyName);
 }
 
 ```
+
+CustomerMapper
+
+```
+public class CustomerMapper : IDataMapper<Customer>
+{
+   public Customer Map(IDataReader rdr)
+   {
+       Customer customer = new Customer();
+ 
+       customer.CustomerId = rdr["CustomerId"] is DBNull ? string.Empty : (string)rdr["CustomerId"];
+       customer.CompanyName = rdr["CompanyName"] is DBNull ? string.Empty : (string)rdr["CompanyName"];
+       customer.ContactName = rdr["ContactName"] is DBNull ? string.Empty : (string)rdr["ContactName"];
+       customer.Address = rdr["Address"] is DBNull ? string.Empty : (string)rdr["Address"];
+       customer.Phone = rdr["Phone"] is DBNull ? string.Empty : (string)rdr["Phone"];
+ 
+       return customer;
+    }
+}
+
+
+
+```
+
+
+
 
 
 
