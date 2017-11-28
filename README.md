@@ -14,7 +14,7 @@ IEntityManager em = EntityManagerFactory.CreateInstance(dataSource);
 
 ```
 
-ExecuteReader()
+### ExecuteReader()
 
 ```
 IDataReader rdr=em.ExecuteReader("SELECT * FROM Customers");
@@ -26,7 +26,7 @@ while (rdr.Read())
 
 ```
 
-ExecuteNonQuery()
+### ExecuteNonQuery()
 
 ```
 string sql="INSERT INTO Customers (CustomerId,CompanyName) VALUES ('MSFT','Microsoft')";
@@ -34,7 +34,7 @@ em.ExecuteNonQuery(sql);
 
 ```
 
-ExecuteObject()
+### ExecuteObject()
 
 ```
 string sql="SELECT * FROM Customers ";
@@ -44,7 +44,7 @@ Console.WriteLine(cust.CompanyName);
 
 ```
 
-ExecuteList()
+### ExecuteList()
 
 ```
 string sql="SELECT * FROM Customers ";
@@ -57,7 +57,7 @@ foreach (Customer cust in custs)
 
 ```
 
-Customer Model
+### Customer Model
 
 ```
 public class Customer
@@ -73,7 +73,7 @@ public class Customer
 ```
 
 
-CustomerMapper
+### Customer Mapper
 
 ```
 public class CustomerMapper : IDataMapper<Customer>
@@ -96,7 +96,7 @@ public class CustomerMapper : IDataMapper<Customer>
 
 ```
 
-Fluent Query
+### Fluent Query
 
 ```
 Query q = new Query().From("Customers").Where("CustomerId").Equal("ALFKI");
